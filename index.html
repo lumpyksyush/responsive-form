@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <title>Responsive form</title>
+</head>
+<body>
+
+    <div class="big-container">
+        <div class="container">
+            <nav class="row">
+                <div class="nav-item">Потоки<i class="fas fa-arrow-right"></i></div>
+                <div class="nav-item">Создание потока<i class="fas fa-arrow-right"></i></div>
+                <div class="nav-item active">Генератор iframe формы</div>
+            </nav>
+            <div class="row form-body">
+                <section class="col-4 form-settings">
+                    <h2>Настройка iframe формы</h2>
+                    <div class="main-settings">
+                        <h3>Основные настройки</h3>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Шрифт</span>
+                                    <select class="form-control" name="font-family">
+                                            <option selected value="Arial">Arial</option>                                            
+                                            <option value="Roboto">Roboto</option>
+                                            <option value="Open Sans">Open Sans</option>
+                                    </select>                                      
+                            </div>
+                            <div class="align-self-end col-4">
+                                <span>Размер (px)</span>
+                                <input  class="form-control" value="18" />
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-6">
+                                    <span>Цвет фона формы</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#FFFFFF">
+                                            </div>
+                                            <input type="text" class="form-control" value="#FFFFFF">
+                                    </div>
+                                </div>
+                                <div class="align-self-end col-6">
+                                    <span>Цвет текста</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#333333">
+                                            </div>
+                                            <input type="text" class="form-control" value="#333333">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      Максимальная ширина формы (px)
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-8">
+                                    <div class="maxlentgh-bar">
+                                        <div class="bluefill"></div>
+                                        <div class="round-range"></div>
+                                    </div>                                
+                                </div>
+                                <div class="align-self-end col-4">
+                                    <input  class="form-control" value="640" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="fields">
+                        <h3>Поля для заполнения</h3>
+                        <div class="row">
+                                <div class="col-6">
+                                    <span>Цвет фона поля</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#FFFFFF">
+                                            </div>
+                                            <input type="text" class="form-control" value="#FFFFFF">
+                                    </div>
+                                </div>
+                                <div class="align-self-end col-6">
+                                    <span>Цвет текста поля</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#333333">
+                                            </div>
+                                            <input type="text" class="form-control" value="#333333">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Высота поля (px)</span>
+                                <div class="empty-space"></div>
+                                <div class="maxlentgh-bar">
+                                    <div class="bluefill"></div>
+                                    <div class="round-range"></div>
+                                </div>                                
+                            </div>
+                            <div class="align-self-end col-4">
+                                <input  class="form-control" value="64" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value=""  disabled>
+                                      Максимальная ширина поля (px)
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-8">
+                                    <div class="maxlentgh-bar">
+                                        <div class="bluefill disabled"></div>
+                                        <div class="round-range disabled"></div>
+                                    </div>                                
+                                </div>
+                                <div class="align-self-end col-4">
+                                    <input  class="form-control  disabled" value="100%" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="button-set">
+                        <h3>Кнопка подтверждения</h3>
+                        <div class="row">
+                                <div class="col-6">
+                                    <span>Цвет фона кнопки</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#E6084B">
+                                            </div>
+                                            <input type="text" class="form-control" value="#E6084B">
+                                    </div>
+                                </div>
+                                <div class="align-self-end col-6">
+                                    <span>Цвет текста кнопки</span>
+                                    <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <input type="color" class="form-control" value="#FFFFFF">
+                                            </div>
+                                            <input type="text" class="form-control" value="#FFFFFF">
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Текст на кнопке</span>
+                                <input  class="form-control" value="Оформить заказ" />                                   
+                            </div>
+                            <div class="align-self-end col-4">
+                                <span>Размер (px)</span>
+                                <input  class="form-control" value="18" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Высота кнопки (px)</span>
+                                <div class="empty-space"></div>
+                                <div class="maxlentgh-bar">
+                                    <div class="bluefill"></div>
+                                    <div class="round-range"></div>
+                                </div>                                
+                            </div>
+                            <div class="align-self-end col-4">
+                                <input  class="form-control" value="64" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <span>Скругление углов кнопки (px)</span>
+                                <div class="empty-space"></div>
+                                <div class="maxlentgh-bar">
+                                    <div class="bluefill"></div>
+                                    <div class="round-range"></div>
+                                </div>                                
+                            </div>
+                            <div class="align-self-end col-4">
+                                <input  class="form-control" value="64" />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value=""  disabled>
+                                      Максимальная ширина кнопки (px)
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-8">
+                                    <div class="maxlentgh-bar">
+                                        <div class="bluefill disabled"></div>
+                                        <div class="round-range disabled"></div>
+                                    </div>                                
+                                </div>
+                                <div class="align-self-end col-4">
+                                    <input  class="form-control  disabled" value="100%" />
+                                </div>
+                            </div>
+                    </div>
+                    <div class="additional">
+                        <h3>Дополнительно</h3>
+                        <div class="row">
+                            <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="" checked>
+                                      Показывать примеры заполнения полей
+                                    </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-check col-12">
+                                    <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox" value="">
+                                      Показывать уведомление о согласии на обработку персональных данных
+                                    </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-getHTML" value="">Получить HTML-код формы</button>
+                </section>
+                <section class="col-8 form-visual">
+                    <div class="form-container">
+                        <form class="form-created" action="">
+                            <div class="form-group">
+                                <label>ФИО</label>
+                                <input type="text" class="form-control" name="name" value="Колька Тухлый" required>
+                                <small class="form-text text-muted">Пример: Иванов Иван Иванович</small>
+                            </div>
+                            <div class="form-group">
+                                    <label>Телефон</label>
+                                    <input type="text" class="form-control" name="phone" required>
+                                    <small class="form-text text-muted">Пример: +7 981 277 22 12</small>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Оформить заказ</button>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
