@@ -16,17 +16,17 @@
 	<body>
 		<div class="big-container">
 			<div class="container">
-				<nav class="row">
+				<!--<nav class="row">
 					<div class="nav-item">Потоки<i class="fas fa-arrow-right"></i></div>
 					<div class="nav-item">Создание потока<i class="fas fa-arrow-right"></i></div>
 					<div class="nav-item active">Генератор iframe формы</div>
-				</nav>
+					</nav>-->
 				<div class="row form-body">
 					<section class="col-4 form-settings">
 						<h2>Настройка iframe формы</h2>
-						<div class="main-settings">
-							<h3>Основные настройки</h3>
-							<form>
+						<form class="form-left-settings">
+							<div class="main-settings">
+								<h3>Основные настройки</h3>
 								<div class="row form-group">
 									<div class="col-8">
 										<label for="select-font-family">Шрифт</label>
@@ -41,11 +41,9 @@
 										<input  class="form-control" id="input-font-size" placeholder="18" />
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="col-6">
-                                        <label for="input-form-bgcolor">Цвет фона формы</label>
+										<label for="input-form-bgcolor">Цвет фона формы</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" id="input-form-bgcolor" value="#FFFFFF">
@@ -54,7 +52,7 @@
 										</div>
 									</div>
 									<div class="align-self-end col-6">
-                                        <label for="input-font-color">Цвет текста</label>
+										<label for="input-font-color">Цвет текста</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" id="input-font-color" value="#333333">
@@ -63,8 +61,6 @@
 										</div>
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="form-check col-12">
 										<label class="form-check-label" for="form-max-width">
@@ -84,14 +80,12 @@
 										<input  class="form-control" value="640" />
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="fields">
-							<h3>Поля для заполнения</h3>
-							<form>
+							</div>
+							<div class="fields">
+								<h3>Поля для заполнения</h3>
 								<div class="row form-group">
 									<div class="col-6">
-                                        <label for="input-field-bgcolor">Цвет фона поля</label>
+										<label for="input-field-bgcolor">Цвет фона поля</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" value="#FFFFFF">
@@ -100,7 +94,7 @@
 										</div>
 									</div>
 									<div class="align-self-end col-6">
-                                        <label for="input-field-textcolor">Цвет текста поля</label>
+										<label for="input-field-textcolor">Цвет текста поля</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" value="#333333">
@@ -109,11 +103,9 @@
 										</div>
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="col-8">
-                                        <label for="input-field-height">Высота поля (px)</label>
+										<label for="input-field-height">Высота поля (px)</label>
 										<div class="empty-space"></div>
 										<div class="maxlentgh-bar">
 											<div class="bluefill"></div>
@@ -124,8 +116,6 @@
 										<input  class="form-control" value="64" id="input-field-height" />
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="form-check col-12">
 										<label class="form-check-label"  for="field-max-width">
@@ -145,14 +135,12 @@
 										<input  class="form-control  disabled" value="100%" />
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="button-set">
-							<h3>Кнопка подтверждения</h3>
-							<form>
+							</div>
+							<div class="button-set">
+								<h3>Кнопка подтверждения</h3>
 								<div class="row form-group">
 									<div class="col-6">
-                                        <label for="input-btn-bgcolor">Цвет фона кнопки</label>
+										<label for="input-btn-bgcolor">Цвет фона кнопки</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" value="#E6084B">
@@ -161,7 +149,7 @@
 										</div>
 									</div>
 									<div class="align-self-end col-6">
-                                        <label for="input-btn-textcolor">Цвет текста кнопки</label>
+										<label for="input-btn-textcolor">Цвет текста кнопки</label>
 										<div class="input-group">
 											<div class="input-group-prepend">
 												<input type="color" class="form-control" value="#FFFFFF">
@@ -170,23 +158,19 @@
 										</div>
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="col-8">
-                                        <label for="input-btn-text">Текст на кнопке</label>
+										<label for="input-btn-text">Текст на кнопке</label>
 										<input  class="form-control" id="input-btn-text" value="Оформить заказ" />                                   
 									</div>
 									<div class="align-self-end col-4">
-                                        <label for="input-btn-textsize">Размер (px)</label>
+										<label for="input-btn-textsize">Размер (px)</label>
 										<input  class="form-control" id="input-btn-textsize" value="18" />
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="col-8">
-                                        <label for="input-btn-height">Высота кнопки (px)</label>
+										<label for="input-btn-height">Высота кнопки (px)</label>
 										<div class="empty-space"></div>
 										<div class="maxlentgh-bar">
 											<div class="bluefill"></div>
@@ -197,11 +181,9 @@
 										<input  class="form-control" id="input-btn-height" value="64" />
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="col-8">
-                                        <label for="input-btn-radius">Скругление углов кнопки (px)</label>
+										<label for="input-btn-radius">Скругление углов кнопки (px)</label>
 										<div class="empty-space"></div>
 										<div class="maxlentgh-bar">
 											<div class="bluefill"></div>
@@ -212,8 +194,6 @@
 										<input  class="form-control" id="input-btn-radius" value="64" />
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="form-check col-12">
 										<label class="form-check-label" for="btn-max-width">
@@ -233,11 +213,9 @@
 										<input  class="form-control  disabled" placeholder="100%" />
 									</div>
 								</div>
-							</form>
-						</div>
-						<div class="additional">
-							<h3>Дополнительно</h3>
-							<form>
+							</div>
+							<div class="additional">
+								<h3>Дополнительно</h3>
 								<div class="row form-group">
 									<div class="form-check col-12">
 										<label class="form-check-label" for="show-fields-param">
@@ -246,8 +224,6 @@
 										</label>
 									</div>
 								</div>
-							</form>
-							<form>
 								<div class="row form-group">
 									<div class="form-check col-12">
 										<label class="form-check-label" for="show-agreement-notification">
@@ -256,9 +232,9 @@
 										</label>
 									</div>
 								</div>
-							</form>
-						</div>
-						<button class="btn-getHTML" value="">Получить HTML-код формы</button>
+							</div>
+							<button class="btn-getHTML" value="">Получить HTML-код формы</button>
+						</form>
 					</section>
 					<section class="col-8 form-visual">
 						<div class="form-container">
